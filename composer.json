@@ -1,0 +1,31 @@
+{
+    "name": "celxkodez/laravel-model-file-manager",
+    "description": "manage file upload on model fields",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Celxkodez\\LaravelModelFileManager\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Celestine",
+            "email": "decele2011@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Celxkodez\\LaravelModelFileManager\\LaravelModelFileManagerServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.3|^7.4|^8.0",
+        "illuminate/filesystem": "^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "prefer-stable": true
+}
