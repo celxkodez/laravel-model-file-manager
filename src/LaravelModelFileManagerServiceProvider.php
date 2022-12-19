@@ -3,7 +3,7 @@
 namespace Celxkodez\LaravelModelFileManager;
 
 use Cloudinary\Cloudinary;
-use Illuminate\Filesystem\Filesystem;
+use League\Flysystem\Filesystem;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
@@ -32,9 +32,10 @@ class LaravelModelFileManagerServiceProvider extends ServiceProvider
         $this->publishes([
             $config => config_path('modelfilemanager.php')
         ]);
-        //
+
+        //todo, this may be abstracted to depend on the user implementation
         Storage::extend('cloudinary', function ($app, $config) {
-            $adapter = new CloudinaryFileAdapter(new Cloudinary($config));
+            $adapter = new CloudinaryFileAdapter(new Cloudinary($config['url']));
 
             return new FilesystemAdapter(
                 new Filesystem($adapter, $config),

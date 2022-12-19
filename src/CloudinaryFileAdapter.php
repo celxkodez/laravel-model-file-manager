@@ -618,7 +618,7 @@ class CloudinaryFileAdapter extends AbstractAdapter
     protected function normalizeResponse(
         $response,
         string $path,
-        $body = null,
+        $body = null
     ): array {
         $path = $this->ensurePrefixedFolderIsRemoved($path);
 
