@@ -13,6 +13,13 @@ use Celxkodez\LaravelModelFileManager\HasUploadFieldObserver;
 trait HasUploadField
 {
     /**
+     * Storage Driver
+     * @note Must be "cloudinary" or only one specified Storage Disk Key on the filesystems.disks config
+     * @var string
+     */
+    protected $driver = 'local';
+
+    /**
      * Register observer to update the upload field before saving.
      *
      * @return void
