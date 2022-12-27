@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the Laravel Model File Manager package.
+ *
+ * (c) Celestine Stephen Uko <decele2011@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace Celxkodez\LaravelModelFileManager;
 
@@ -25,7 +33,7 @@ class HasUploadFieldObserver {
         $location = $model->uploadLocation ?? 'uploads';
         foreach ($model->getAttributes() as $key => $attribute) {
             if (is_object($attribute) && get_class($attribute) === UploadedFile::class) {
-                $model->setAttribute($key, Storage::putFile("$location", $attribute));
+                $model->setAttribute($key, Storage::disk($driver)->putFile("$location", $attribute));
             }
         }
     }

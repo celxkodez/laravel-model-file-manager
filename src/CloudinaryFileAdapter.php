@@ -1,4 +1,12 @@
 <?php
+/**
+ * This file is part of the Laravel Model File Manager package.
+ *
+ * (c) Celestine Stephen Uko <decele2011@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 
 namespace Celxkodez\LaravelModelFileManager;
 
@@ -580,7 +588,6 @@ class CloudinaryFileAdapter extends AbstractAdapter
 
             return $response;
         } catch (\Throwable $e) {
-            throw new \Exception($e);
         }
     }
 
