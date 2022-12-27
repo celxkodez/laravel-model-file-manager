@@ -3,7 +3,7 @@
     "description": "manage file upload on model fields",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Celxkodez\\LaravelModelFileManager\\": "src/"
