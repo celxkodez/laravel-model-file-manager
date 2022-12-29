@@ -1,6 +1,5 @@
 # laravel-model-file-manager
-
-[![Latest Stable Version](http://poser.pugx.org/celxkodez/laravel-model-file-manager/v)](https://packagist.org/packages/celxkodez/laravel-model-file-manager) 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/celxkodez/laravel-model-file-manager.svg)](https://packagist.org/packages/celxkodez/laravel-model-file-manager)
 [![Total Downloads](http://poser.pugx.org/celxkodez/laravel-model-file-manager/downloads)](https://packagist.org/packages/celxkodez/laravel-model-file-manager) 
 [![Latest Unstable Version](http://poser.pugx.org/celxkodez/laravel-model-file-manager/v/unstable)](https://packagist.org/packages/celxkodez/laravel-model-file-manager) 
 [![License](http://poser.pugx.org/celxkodez/laravel-model-file-manager/license)](https://packagist.org/packages/celxkodez/laravel-model-file-manager) 
