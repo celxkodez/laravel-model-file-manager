@@ -35,7 +35,7 @@ class LaravelModelFileManagerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config = realpath(__DIR__.'/../resources/config/modelfilemanager.php');
+        $config = realpath(__DIR__ . '/../resources/config/modelfilemanager.php');
 
         $this->publishes([
             $config => config_path('modelfilemanager.php')
@@ -50,7 +50,7 @@ class LaravelModelFileManagerServiceProvider extends ServiceProvider
             ]]);
         }
 
-        //@todo, this may be abstracted to depend on the user implementation
+        //@TODO, this may be abstracted to depend on the user implementation
         Storage::extend('cloudinary', function ($app, $config) {
             $adapter = new CloudinaryFileAdapter(new Cloudinary($config['url']));
 
