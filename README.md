@@ -15,7 +15,7 @@
 To get the latest version of Laravel model file manager, simply require it
 
 ```bash
-composer require composer require celxkodez/laravel-model-file-manager
+composer require celxkodez/laravel-model-file-manager
 ```
 
 Or add the following line to the require block of your `composer.json` file.
