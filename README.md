@@ -51,7 +51,7 @@ return [
 
 ## Usage
 
-### Prepare your Model
+### On your Model, add the ``HasUploadField`` trait.
 
 ```php
 
